@@ -1,39 +1,3 @@
-### keybinding 
-
-``` json
-[
-    {
-        "key": "alt+.",
-        "command": "acceptSelectedSuggestion",
-        "when": "suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && textInputFocus"
-    },
-    {
-        "key": "alt+.",
-        "command": "editor.action.inlineSuggest.commit",
-        "when": "inlineSuggestionVisible && textInputFocus"
-    },
-    {
-        "key": "alt+j",
-        "command": "editor.action.moveLinesDownAction",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "alt+k",
-        "command": "editor.action.moveLinesUpAction",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "shift+k",
-        "command": "editor.action.showHover",
-        "when": "editorTextFocus"
-    }
-]
-```
-------------------------------------
-
-### settings
-
-```json
 {
   "workbench.iconTheme": "material-icon-theme",
   "files.autoSave": "afterDelay",
@@ -263,6 +227,10 @@
       "after": ["5", "k"],
     },
     {
+      "before": ["L"],
+      "after": [],
+    },
+    {
       "before": ["K"],
       "commands": ["editor.action.insertLineAfter"],
     },
@@ -277,5 +245,5 @@
   "extensions.experimental.affinity": {
     "vscodevim.vim": 1,
   },
+"editor.inlineSuggest.enabled": false,
 }
-```

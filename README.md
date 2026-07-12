@@ -25,7 +25,7 @@
     {
         "key": "shift+k",
         "command": "editor.action.showHover",
-        "when": "editorTextFocus"
+        "when": "editorTextFocus && vim.mode != 'Insert'"
     }
 ]
 ```
@@ -200,7 +200,7 @@
         "settings": {
           "foreground": "#A277FF",
         },
-      },
+      }
     ],
   },
   "workbench.colorTheme": "Aura Soft Dark",
@@ -235,10 +235,6 @@
       "before": ["<A-l>"],
       "after": ["<Esc>", "e", "a"],
     },
-    {
-        "before": ["j", "k"],
-        "after": ["<Esc>"]
-    }
   ],
 
   "vim.normalModeKeyBindingsNonRecursive": [
@@ -261,6 +257,10 @@
     {
       "before": ["<C-k>"],
       "after": ["5", "k"],
+    },
+    {
+      "before": ["L"],
+      "after": [],
     },
     {
       "before": ["K"],

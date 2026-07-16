@@ -268,6 +268,17 @@
     },
   ],
 
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+        "before": ["<C-j>"],
+        "after": ["5", "j"]
+    },
+    {
+        "before": ["<C-k>"],
+        "after": ["5", "k"]
+    }
+  ],
+
   "vim.handleKeys": {
     "<C-a>": false,
     "<C-f>": false,

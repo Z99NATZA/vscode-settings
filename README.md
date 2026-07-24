@@ -39,10 +39,10 @@
   "files.autoSave": "afterDelay",
   "editor.stickyScroll.enabled": false,
   "background.fullscreen": {
-    "images": ["file:///C:/Users/znnn/Pictures/_wal/_05.png"],
+    "images": ["file:///C:/Users/chaiw/OneDrive/Pictures/wallpaper/_wal8.png"],
     "opacity": 0.1,
     "size": "cover",
-    "position": "center",
+    "position": "bottom",
     "interval": 0,
   },
   "background.editor": {
@@ -200,7 +200,7 @@
         "settings": {
           "foreground": "#A277FF",
         },
-      }
+      },
     ],
   },
   "workbench.colorTheme": "Aura Soft Dark",
@@ -259,23 +259,22 @@
       "after": ["5", "k"],
     },
     {
-      "before": ["L"],
-      "after": [],
-    },
-    {
       "before": ["K"],
       "commands": ["editor.action.insertLineAfter"],
     },
+    {
+      "before": ["L"],
+      "after": [],
+    }
   ],
-
   "vim.visualModeKeyBindingsNonRecursive": [
     {
-        "before": ["<C-j>"],
-        "after": ["5", "j"]
+      "before": ["<C-j>"],
+      "after": ["5", "j"]
     },
     {
-        "before": ["<C-k>"],
-        "after": ["5", "k"]
+      "before": ["<C-k>"],
+      "after": ["5", "k"]
     }
   ],
 
@@ -288,6 +287,29 @@
   "extensions.experimental.affinity": {
     "vscodevim.vim": 1,
   },
-  "editor.inlineSuggest.enabled": false,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+	"editor.quickSuggestions": {
+		"other": "off",
+		"comments": "off",
+		"strings": "off"
+	},
+
+	"editor.suggestOnTriggerCharacters": false,
+	"editor.wordBasedSuggestions": "off",
+	"editor.parameterHints.enabled": false,
+	"editor.inlineSuggest.enabled": false,
+
+  "php.suggest.basic": false,
+  "[php]": {
+    "editor.defaultFormatter": "DEVSENSE.phptools-vscode"
+  },
+  "editor.inlayHints.enabled": "on",
+
+  "typescript.inlayHints.parameterNames.enabled": "all",
+  "typescript.inlayHints.parameterNames.suppressWhenArgumentMatchesName": false
 }
 ```
